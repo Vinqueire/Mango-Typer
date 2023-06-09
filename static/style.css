@@ -1,6 +1,8 @@
-#tests
+.dank
 {
-color: blueviolet;
-font-size: 60px;
+font-size: 4rem;
+font-weight: bold;
+color: rgb(14, 204, 115);
+font-family: 'Kablammo', cursive;
 text-align: center;
 }

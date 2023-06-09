@@ -1,13 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
-    <title>Main page</title>
-</head>
-<body>
-    <header id="tests">Test website</header>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+    Tutuuu
+{% endblock %}
+
+{% block main %}
+    <header style="text-align: center;">
+        <span class="dank">Zakaz brapowania frajerze</span>
+    </header>
+    <div style="text-align: center; position: relative; top: 2.5rem;">
+        <select class="form-select" aria-label="Default select example" style="font-size: 1.5rem;">
+            <option selected>Okay, so this shit will choose time</option>
+            <option value="1">10 sec</option>
+            <option value="2">20 sec</option>
+            <option value="3">30 sec</option>
+        </select>
+    </div>
+    <div style="text-align: center;">
+        <p>    
+            <textarea style="position: relative; top: 7.5rem; font-size: 1.5rem;" rows="5" cols="40">SOMERANDOM SHIT HEREEEEEEEEEE</textarea>
+        </p>
+        <p>
+            <textarea style="position: relative; top: 7.5rem; font-size: 1.5rem;" rows="1" cols="40">Type your text here</textarea>
+        </p>    
+    </div>
+{% endblock %}
