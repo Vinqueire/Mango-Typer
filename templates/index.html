@@ -10,25 +10,30 @@
     </header>
     <div style="text-align: center; position: relative; top: 2.5rem;">
         <form>
-            <select class="form-select" aria-label="Default select example" style="font-size: 1.5rem;" id="timeSelect" onchange="getTime()"">
+            <select class="form-select" aria-label="Default select example" style="font-size: 1.5rem; background-color: rgb(35, 34, 37); color: azure;" id="timeSelect" onchange="getTime()"">
                 <option selected disabled>Okay, so this shit will choose time</option>
-                <option value="10"">10 sec</option>
+                <option value="10">10 sec</option>
                 <option value="20">20 sec</option>
                 <option value="30">30 sec</option>
                 <option value="60">1 min</option>
             </select>
         </form>
+        <div>
+            <button type="button" class="btn btn-outline-success btn-sm" style="position: relative; top: 1rem;">Primary</button>
+        </div>    
     </div>
     <div style="text-align: center;">
         <p>    
-            <textarea style="position: relative; top: 7.5rem; font-size: 1.5rem;" rows="5" cols="40">SOMERANDOM SHIT HEREEEEEEEEEE</textarea>
-        </p>
+            <textarea readonly style="position: relative; top: 7.5rem; font-size: 1.5rem; color: aqua; background-color: rgb(35, 34, 37);" rows="5" cols="40" id="stuffToType">sssss</textarea>
+        </p>  
+    </div>
+    <div style="text-align: center;">
         <p>
-            <textarea style="position: relative; top: 7.5rem; font-size: 1.5rem;" rows="1" cols="40">Type your text here</textarea>
-        </p>    
+            <textarea style="position: relative; top: 7.5rem; font-size: 1.5rem; background-color: rgb(35, 34, 37); color: azure;" rows="1" cols="40">Type your text here</textarea>
+        </p>  
     </div>
     <div>
-        <p style="position: relative; top: 8rem; font-size: 2.5rem; text-align: center;"><span>Time left: <span id="temp"></span></span></p>
+        <p style="position: relative; top: 8rem; font-size: 2.5rem; text-align: center; color: azure;"><span>Time left: <span id="temp"></span></span></p>
     </div>
     <script src="/static/timer.js"></script>
     <script src="/static/displayer.js"></script>
