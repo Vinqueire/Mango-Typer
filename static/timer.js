@@ -2,7 +2,6 @@ function getTime()
 {
     const time = document.getElementById("timeSelect");
     var timeValue = time.value;
-   
     printTime(timeValue);
 }
     
