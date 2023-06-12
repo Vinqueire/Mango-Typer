@@ -1,20 +1,18 @@
-function startTimer(duration) {
-    let timer = duration;
-    let minutes, seconds;
-  
-    setInterval(function () {
-      minutes = parseInt(timer / 60, 10);
-      seconds = parseInt(timer % 60, 10);
-  
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-  
-      document.getElementById("timer").textContent = minutes + ":" + seconds;
-  
-      if (--timer < 0) {
-        clearInterval(timer);
-        // Handle time up
-        alert("Time's up!");
-      }
-    }, 1000);
-  }
+function getTime()
+{
+    const time = document.getElementById("timeSelect");
+    var timeValue = time.value;
+    printTime(timeValue);
+}
+    
+function printTime(timeVal)
+{
+    if (timeVal >= 0)
+    {
+        document.getElementById("timer").textContent = timeVal;
+        setTimeout(printTime, 1000, --timeVal);
+    }
+    else
+        document.getElementById("userInput").setAttribute("type", "hidden");
+}
+

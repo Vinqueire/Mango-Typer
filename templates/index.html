@@ -6,7 +6,7 @@
 
 {% block main %}
     <header style="text-align: center;">
-        <span class="dank">Zakaz brapowania frajerze</span>
+        <h1 class="dank">ayayayayay</h1>
     </header>
     <div style="text-align: center;">
         <form>
@@ -19,41 +19,20 @@
             </select>
         </form>
         <div>
-            <button type="button" onclick="startChallenge()">Begin</button>
+            <button type="button" onclick="countdown(5);" style="position: relative; top: 0.1rem;">Begin</button>
         </div>    
     </div>
     <div class="container" style="text-align: center;">
         <div id="challengeText"></div>
-        <input type="text" id="userInput" placeholder="Type your text here">
+        <input type="text" hidden id="userInput" placeholder="Type your text here">
     </div>
+    <p id="countdown" hidden style="font-size: 2rem; text-align: center;">The test will begin in: <span id="countdownTime"></span></p>
     <div style="text-align: center;">
-        <p>Time left: <span id="timer"></span></p>
+        <p style="font-size: 2rem;" id="timeLeft" hidden>Time left: <span id="timer" style="font-size: 2rem;"></span></p>
     </div>
     <script src="/static/makeWordList.js"></script>
     <script src="/static/displayer.js"></script>
     <script src="/static/timer.js"></script>
-    <script>
-        function startChallenge() {
-        const timeSelect = document.getElementById("timeSelect");
-        if (timeSelect.value === "0") {
-        alert("No time has been selected");
-        } else {
-        const timeValue = parseInt(timeSelect.value, 10);
-        const challengeText = makeList();
-        document.getElementById("challengeText").textContent = challengeText;
-        document.getElementById("userInput").focus();
-        startTimer(timeValue);
-        }
-    }
-
-        document.getElementById("userInput").addEventListener("input", function() {
-            const userInput = document.getElementById("userInput").value;
-            updateChallengeText(userInput);
-
-            if (userInput === challengeText) {
-                // Handle completion of challenge
-                alert("Challenge completed!");
-            }
-        });
-    </script>
+    <script src="/static/startTest.js"></script>
+    <script src="/static/countdown.js"></script>
 {% endblock %}

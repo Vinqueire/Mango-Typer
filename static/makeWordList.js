@@ -34,13 +34,12 @@ function makeList() {
     ];
   
     // Generate a sentence with 10 words
-    const sentenceLength = 10;
+    const sentenceLength = 250;
     const sentence = [];
     for (let i = 0; i < sentenceLength; i++) {
         const randomIndex = Math.floor(Math.random() * wordList.length);
         const randomWord = wordList[randomIndex];
         sentence.push(randomWord);
     }
-
     return sentence.join(" ");
 }
