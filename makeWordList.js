@@ -33,8 +33,30 @@ function makeList() {
       "brought", "heat", "snow", "bed", "bring", "sit", "perhaps", "fill", "east", "weight", "language", "among"
     ];
   
+    var length = 0;
+    var time = document.getElementById("timeSelect");
+    var timeToSwitch = time.value;
+    console.log(timeToSwitch);
+    switch(timeToSwitch){
+      case "10":
+        length = 100;
+        break;
+      case "20":
+        length = 150;
+        break;
+      case "30": 
+        length = 200;
+        break;
+      case "60":
+        length = 250;
+        break;
+      case "300":
+        length = 1250;
+        break;
+    }
+
     const sentence = [];
-    for (let i = 0; i < 250; i++) {
+    for (let i = 0; i < length; i++) {
         const randomIndex = Math.floor(Math.random() * wordList.length);
         const randomWord = wordList[randomIndex];
         sentence.push(randomWord);

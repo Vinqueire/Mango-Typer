@@ -24,6 +24,9 @@ function calculateWpm(){
         case "60":
             wpm = amount;
             break;
+        case "300":
+            wpm = amount;
+            break;
     }
 
     document.getElementById("timeLeft").setAttribute("hidden", "true");
