@@ -5,8 +5,5 @@ function countdown(timeVal)
     if (timeVal == 0)
         startTest();
     else 
-    {
-        document.getElementById("countdownTime").textContent = timeVal;
-        setTimeout(countdown, 1000, --timeVal);
-    }
+        calculateWpm();
 }
