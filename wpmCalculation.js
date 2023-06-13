@@ -26,7 +26,7 @@ function calculateWpm(){
             wpm = amount;
             break;
         case "300":
-            wpm = amount;
+            wpm = amount / 5;
             break;
     }
 
