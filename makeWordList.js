@@ -51,7 +51,7 @@ function makeList() {
         length = 250;
         break;
       case "300":
-        length = 1250;
+        length = 1100;
         break;
     }
 
