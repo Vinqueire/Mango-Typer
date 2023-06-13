@@ -12,7 +12,5 @@ function printTime(timeVal)
         document.getElementById("timer").textContent = timeVal;
         setTimeout(printTime, 1000, --timeVal);
     }
-    else
-        document.getElementById("userInput").setAttribute("type", "hidden");
 }
 

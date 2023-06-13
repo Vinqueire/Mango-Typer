@@ -1,4 +1,5 @@
 function calculateWpm(){
+    document.getElementById("userInput").setAttribute("type", "hidden");
     const words = document.getElementById("userInput").value;
     const randWords = document.getElementById("challengeText").textContent;
     var charAmt = 0;

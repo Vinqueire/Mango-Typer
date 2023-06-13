@@ -14,7 +14,7 @@ function startTest() {
     document.getElementById("userInput").removeAttribute("hidden");
     document.getElementById("timeLeft").removeAttribute("hidden");
     document.getElementById("userInput").focus();
-    var timeout = timeSelect.value * 1050;
+    var timeout = timeSelect.value * 1000;
     setTimeout(calculateWpm, timeout);
     }
 }
