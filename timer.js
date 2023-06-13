@@ -13,8 +13,6 @@ function printTime(timeVal)
         setTimeout(printTime, 1000, --timeVal);
     }
     else
-    {
-        document.getElementById("userInput").setAttribute("type", "hidden");
-    }
+        calculateWpm();
 }
 
