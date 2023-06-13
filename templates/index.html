@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Tutuuu
+    Mango Typer
 {% endblock %}
 
 {% block main %}
@@ -18,26 +18,24 @@
                   Options
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Green/Red</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="setColour(1)">Green/Red</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Blue/Orange</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="setColour(2)">Blue/Orange</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Pink/Green</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="setColour(3)">Pink/Green</a></li>
                 </ul>
               </li>
+              <option value="1" id="color" hidden>XDDD<option>
             </ul>
             <span class="navbar-text">
                 <a href="https://github.com/Vinqueire"><img src="/static/github.png" alt="Logo" width="25" height="25" class="d-inline-block align-text"></a>
             </span>
           </div>
-
-
-
         </div>
     </nav>
     <div style="text-align: center;">
         <form>
-            <select id="timeSelect">
+            <select id="timeSelect" class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
                 <option selected disabled value="0">Select time</option>
                 <option value="10">10 sec</option>
                 <option value="20">20 sec</option>
@@ -46,7 +44,7 @@
             </select>
         </form>
         <div>
-            <button type="button" onclick="countdown(5);" style="position: relative; top: 0.1rem;">Begin</button>
+            <button id="begin" class="btn btn-secondary btn-sm" type="button" onclick="countdown(5);" style="position: relative; top: 0.1rem; width: 6rem;">Begin</button>
         </div>    
     </div>
     <div class="container" style="text-align: center;">
@@ -58,6 +56,7 @@
         <p style="font-size: 2rem;" id="timeLeft" hidden>Time left: <span id="timer" style="font-size: 2rem;"></span></p>
         <p style="font-size: 2rem;" id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
     </div>
+    <script src="/static/setColour.js"></script>
     <script src="/static/makeWordList.js"></script>
     <script src="/static/displayer.js"></script>
     <script src="/static/timer.js"></script>

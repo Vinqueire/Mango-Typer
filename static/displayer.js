@@ -17,6 +17,27 @@ function displayText(challengeText) {
   
     let challengeTextContainer = document.getElementById("challengeText");
     challengeTextContainer.innerHTML = "";
+
+    var color = document.getElementById("color").value;
+
+    var clr1 = "rgb(20, 184, 55)";
+    var clr2 = "rgb(201, 45, 17)";
+
+    if (color == 1)
+    {
+      clr1 = "rgb(20, 184, 55)";
+      clr2 = "red";
+    }
+    else if (color == 2)
+    {
+      clr1 = "rgb(24, 164, 199)";
+      clr2 = "orange";
+    }
+    else if (color == 3)
+    {
+      clr1 = "rgb(164, 17, 201)";
+      clr2 = "rgb(20, 184, 55)";
+    }
   
     for (let i = 0; i < challengeText.length; i++) {
       let span = document.createElement("span");
@@ -24,9 +45,9 @@ function displayText(challengeText) {
   
       if (i < userInputLength) {
         if (userInput[i] === challengeText[i]) {
-          span.style.backgroundColor = "green";
+          span.style.backgroundColor = clr1;
         } else {
-          span.style.backgroundColor = "red";
+          span.style.backgroundColor = clr2;
         }
       }
   
