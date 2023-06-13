@@ -1,6 +1,6 @@
 function countdown(timeVal)
 {
-        document.getElementById("countdown").removeAttribute("hidden");
+    document.getElementById("countdown").removeAttribute("hidden");
     if (timeVal == 0)
         startTest();
     else 

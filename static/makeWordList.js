@@ -33,7 +33,6 @@ function makeList() {
       "brought", "heat", "snow", "bed", "bring", "sit", "perhaps", "fill", "east", "weight", "language", "among"
     ];
   
-    // Generate a sentence with 10 words
     const sentenceLength = 250;
     const sentence = [];
     for (let i = 0; i < sentenceLength; i++) {

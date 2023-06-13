@@ -32,10 +32,5 @@ function displayText(challengeText) {
   
       challengeTextContainer.appendChild(span);
     }
-  
-    if (userInput === challengeText) {
-      // Handle completion of challenge
-      alert("Challenge completed!");
-    }
   });
   

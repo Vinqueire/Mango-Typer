@@ -14,10 +14,7 @@ function startTest() {
     document.getElementById("userInput").removeAttribute("hidden");
     document.getElementById("timeLeft").removeAttribute("hidden");
     document.getElementById("userInput").focus();
+    var timeout = timeSelect.value * 1100;
+    setTimeout(calculateWpm, timeout);
     }
 }
-
-    document.getElementById("userInput").addEventListener("input", function() {
-        const userInput = document.getElementById("userInput").value;
-        updateChallengeText(userInput);
-    });

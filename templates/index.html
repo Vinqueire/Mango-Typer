@@ -23,16 +23,18 @@
         </div>    
     </div>
     <div class="container" style="text-align: center;">
-        <div id="challengeText"></div>
+        <div id="challengeText" onmousedown='return false;' onselectstart='return false;'></div>
         <input type="text" hidden id="userInput" placeholder="Type your text here">
     </div>
     <p id="countdown" hidden style="font-size: 2rem; text-align: center;">The test will begin in: <span id="countdownTime"></span></p>
     <div style="text-align: center;">
         <p style="font-size: 2rem;" id="timeLeft" hidden>Time left: <span id="timer" style="font-size: 2rem;"></span></p>
+        <p style="font-size: 2rem;" id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
     </div>
     <script src="/static/makeWordList.js"></script>
     <script src="/static/displayer.js"></script>
     <script src="/static/timer.js"></script>
     <script src="/static/startTest.js"></script>
     <script src="/static/countdown.js"></script>
+    <script src="/static/wpmCalculation.js"></script>
 {% endblock %}
