@@ -13,19 +13,15 @@ function calculateWpm(){
     var wpm = 0;
     switch(document.getElementById("timeSelect").value){
         case "10":
-           console.log("time is 10");
            wpm = amount * 6;
            break;
         case "20":
-            console.log("time is 20");
             wpm = amount * 3;
             break;
         case "30":
-            console.log("time is 30");
             wpm = amount * 2;
             break;
         case "60":
-            console.log("time is 60");
             wpm = amount;
             break;
     }

@@ -33,9 +33,8 @@ function makeList() {
       "brought", "heat", "snow", "bed", "bring", "sit", "perhaps", "fill", "east", "weight", "language", "among"
     ];
   
-    const sentenceLength = 250;
     const sentence = [];
-    for (let i = 0; i < sentenceLength; i++) {
+    for (let i = 0; i < 250; i++) {
         const randomIndex = Math.floor(Math.random() * wordList.length);
         const randomWord = wordList[randomIndex];
         sentence.push(randomWord);

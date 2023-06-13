@@ -1,12 +1,12 @@
 function displayText(challengeText) {
-    let challengeTextContainer = document.getElementById("challengeText");
-    challengeTextContainer.innerHTML = "";
+    let container = document.getElementById("challengeText");
+    container.innerHTML = "";
   
     for (let i = 0; i < challengeText.length; i++) {
       let span = document.createElement("span");
       span.textContent = challengeText[i];
   
-      challengeTextContainer.appendChild(span);
+      container.appendChild(span);
     }
   }
   
@@ -15,8 +15,8 @@ function displayText(challengeText) {
     const userInput = document.getElementById("userInput").value;
     const userInputLength = userInput.length;
   
-    let challengeTextContainer = document.getElementById("challengeText");
-    challengeTextContainer.innerHTML = "";
+    let container = document.getElementById("challengeText");
+    container.innerHTML = "";
 
     var color = document.getElementById("color").value;
 
@@ -51,7 +51,7 @@ function displayText(challengeText) {
         }
       }
   
-      challengeTextContainer.appendChild(span);
+      container.appendChild(span);
     }
   });
   
