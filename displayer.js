@@ -1,8 +1,9 @@
 // Create span for each
 // This is very bad code :c
+var length = 0;
 var clr1 = "rgb(20, 184, 55)";
 var clr2 = "rgb(201, 45, 17)";
-var spanContainer = [];
+var tempContainer;
 
 function displayText(challengeText) {
     let container = document.getElementById("challengeText");
@@ -13,7 +14,6 @@ function displayText(challengeText) {
       span.textContent = challengeText[i];
   
       container.appendChild(span);
-      spanContainer.push(span);
     }
 
     color = document.getElementById("color").value;
@@ -32,28 +32,25 @@ function displayText(challengeText) {
         clr2 = "rgb(20, 184, 55)";
         break;
     }  
+    tempContainer = document.querySelectorAll("#challengeText span");
   }
   
 document.getElementById("userInput").addEventListener("input", function () {
   const challengeText = document.getElementById("challengeText").textContent;
   const userInput = document.getElementById("userInput").value;
   const userInputLength = userInput.length;
+  length ++;
 
-  let container = document.getElementById("challengeText");
-  container.innerHTML = "";
-
-  for (let i = 0; i < challengeText.length; i++) {
-    let span = document.createElement("span");
-    span.textContent = challengeText[i];
-
-    if (i < userInputLength) {
-      if (userInput[i] === challengeText[i]) {
-        span.style.backgroundColor = clr1;
-      } else 
-        span.style.backgroundColor = clr2;
+  for (let i = 0; i < userInputLength; i++) {
+    if (i < length) {
+      if (userInput[i] === challengeText[i]) 
+        tempContainer[i].style.backgroundColor = clr1;
+      else
+        tempContainer[i].style.backgroundColor = clr2;
     }
-
-    container.appendChild(span);
+    if (userInputLength < length){
+      tempContainer[length - 2].style.backgroundColor = "transparent";
+      length = userInputLength;  
+    }
   }
 });
-  
