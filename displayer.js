@@ -1,5 +1,9 @@
 // Create span for each
+var color = 1;
+var clr1 = "rgb(20, 184, 55)";
+var clr2 = "rgb(201, 45, 17)";
 let spanContainer = [];
+
 function displayText(challengeText) {
     let container = document.getElementById("challengeText");
     container.innerHTML = "";
@@ -11,6 +15,19 @@ function displayText(challengeText) {
       container.appendChild(span);
       spanContainer.push(span);
     }
+
+    color = document.getElementById("color").value;
+    switch(color){
+      case "1":
+        clr1 = "rgb(20, 184, 55)";
+        clr2 = "red";
+      case "2":
+        clr1 = "rgb(24, 164, 199)";
+        clr2 = "orange";
+      case "3":
+        clr1 = "rgb(164, 17, 201)";
+        clr2 = "rgb(20, 184, 55)";
+    }  
   }
   
 document.getElementById("userInput").addEventListener("input", function () {
@@ -20,27 +37,6 @@ document.getElementById("userInput").addEventListener("input", function () {
 
   let container = document.getElementById("challengeText");
   container.innerHTML = "";
-
-  var color = document.getElementById("color").value;
-
-  var clr1 = "rgb(20, 184, 55)";
-  var clr2 = "rgb(201, 45, 17)";
-
-  if (color == 1)
-  {
-    clr1 = "rgb(20, 184, 55)";
-    clr2 = "red";
-  }
-  else if (color == 2)
-  {
-    clr1 = "rgb(24, 164, 199)";
-    clr2 = "orange";
-  }
-  else if (color == 3)
-  {
-    clr1 = "rgb(164, 17, 201)";
-    clr2 = "rgb(20, 184, 55)";
-  }
 
   for (let i = 0; i < challengeText.length; i++) {
     let span = spanContainer[i];
