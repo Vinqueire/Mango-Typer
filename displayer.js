@@ -1,8 +1,8 @@
 // Create span for each
-var color = 1;
+// This is very bad code :c
 var clr1 = "rgb(20, 184, 55)";
 var clr2 = "rgb(201, 45, 17)";
-let spanContainer = [];
+var spanContainer = [];
 
 function displayText(challengeText) {
     let container = document.getElementById("challengeText");
@@ -17,16 +17,20 @@ function displayText(challengeText) {
     }
 
     color = document.getElementById("color").value;
+    console.log(color);
     switch(color){
       case "1":
         clr1 = "rgb(20, 184, 55)";
         clr2 = "red";
+        break;
       case "2":
         clr1 = "rgb(24, 164, 199)";
         clr2 = "orange";
+        break;
       case "3":
         clr1 = "rgb(164, 17, 201)";
         clr2 = "rgb(20, 184, 55)";
+        break;
     }  
   }
   
@@ -39,7 +43,7 @@ document.getElementById("userInput").addEventListener("input", function () {
   container.innerHTML = "";
 
   for (let i = 0; i < challengeText.length; i++) {
-    let span = spanContainer[i];
+    let span = document.createElement("span");
     span.textContent = challengeText[i];
 
     if (i < userInputLength) {
