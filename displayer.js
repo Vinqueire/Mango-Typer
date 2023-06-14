@@ -4,6 +4,7 @@ var length = 0;
 var clr1 = "rgb(20, 184, 55)";
 var clr2 = "rgb(201, 45, 17)";
 var tempContainer;
+var lengthh = 0;
 
 function displayText(challengeText) {
     let container = document.getElementById("challengeText");
@@ -39,18 +40,17 @@ document.getElementById("userInput").addEventListener("input", function () {
   const challengeText = document.getElementById("challengeText").textContent;
   const userInput = document.getElementById("userInput").value;
   const userInputLength = userInput.length;
+  var cpyLen = userInputLength-1;
   length ++;
-
-  for (let i = 0; i < userInputLength; i++) {
-    if (i < length) {
-      if (userInput[i] === challengeText[i]) 
-        tempContainer[i].style.backgroundColor = clr1;
+  for (cpyLen; cpyLen < userInputLength; cpyLen++) {
+      if (userInput[cpyLen] === challengeText[cpyLen]) 
+        tempContainer[cpyLen].style.backgroundColor = clr1;
       else
-        tempContainer[i].style.backgroundColor = clr2;
-    }
+        tempContainer[cpyLen].style.backgroundColor = clr2;
+    
     if (userInputLength < length){
       tempContainer[length - 2].style.backgroundColor = "transparent";
-      length = userInputLength;  
+      length = userInputLength;
     }
   }
 });
