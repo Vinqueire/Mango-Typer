@@ -33,4 +33,5 @@ function calculateWpm(){
     document.getElementById("timeLeft").setAttribute("hidden", "true");
     document.getElementById("answerWpm").textContent = Math.round(wpm);
     document.getElementById("answer").removeAttribute("hidden");
+    document.getElementById("restart").removeAttribute("hidden");
 }
