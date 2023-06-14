@@ -30,7 +30,12 @@ function makeList() {
       "strong", "special", "mind", "behind", "clear", "tail", "produce", "fact", "street", "inch", "lot", "nothing", "course", "stay", "wheel",
       "full", "force", "blue", "object", "decide", "surface", "deep", "moon", "island", "foot", "yet", "busy", "test", "record", "boat", "common",
       "gold", "possible", "plane", "age", "dry", "wonder", "laugh", "thousand", "ago", "ran", "check", "game", "shape", "yes", "hot", "miss",
-      "brought", "heat", "snow", "bed", "bring", "sit", "perhaps", "fill", "east", "weight", "language", "among"
+      "brought", "heat", "snow", "bed", "bring", "sit", "perhaps", "fill", "east", "weight", "language", "among", "promiscuous", "invective", "hermitage",
+      "malevolent", "irksome", "tenable", "inimitable", "tenable", "depredation", "amalgamate", "proxy", "immutable", "fuck", "dote", "reactionary",
+      "rationalism", "endue", "discriminating", "brooch", "disembark", "aria", "distend", "spangle", "spectral", "gripe", "exorbitant", "inclusive",
+      "abase", "hurtle", "interpolate", "mettle", "obtuse", "palliate", "querulous", "abjure", "mendicant", "makeshift", "imposture", "dispassionate",
+      "harrowing", "askance", "importunate", "blatant", "virtuoso", "automate", "flail", "redoubtable", "maul", "trite", "sedulous", "sublimate",
+      "devious", "sentient", "cryptic", "archetype", "fawning", "miserly", "genesis"
     ];
   
     var length = 0;
