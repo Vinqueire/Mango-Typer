@@ -1,9 +1,13 @@
 function startTest() {
     document.getElementById("countdown").setAttribute("hidden", "true");
     const timeSelect = document.getElementById("timeSelect");
-    if (timeSelect.value === "0") {
+    if (timeSelect.value === "0") 
+    {
     alert("No time has been selected");
-    } else {
+    window.location.href = "https://vinqueire.github.io/Wpm-website/";
+    } 
+    else 
+    {
     const timeValue = parseInt(timeSelect.value, 10);
     const challengeText = makeList();
     document.getElementById("challengeText").textContent = challengeText;
