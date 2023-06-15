@@ -10,5 +10,6 @@ Things Learned:
 - Ui design
 - Css animations
 - Bunch of Javascript
+- Performance optimalizaion skills
 - Improved my bootstrap skills
 And most importantly I really had lots of fun while making it.
