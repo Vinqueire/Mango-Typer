@@ -13,7 +13,7 @@ function startTest() {
     document.getElementById("challengeText").textContent = challengeText;
     document.getElementById("userInput").focus();
     printTime(timeValue);
-    document.getElementById("challengeText").style.border = "thick solid #000000";
+    document.getElementById("challengeText").style.border = "thin solid aliceblue";
     document.getElementById("challengeText").style.borderRadius = "10px";
     document.getElementById("userInput").removeAttribute("hidden");
     document.getElementById("timeLeft").removeAttribute("hidden");

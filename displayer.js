@@ -1,8 +1,8 @@
 // Create span for each
 // This is very bad code :c
 var length = 0;
-var clr1 = "rgb(20, 184, 55)";
-var clr2 = "rgb(201, 45, 17)";
+var clr1 = "rgb(25, 109, 17)";
+var clr2 = "rgb(228, 124, 6)";
 var tempContainer;
 var lengthh = 0;
 
@@ -21,16 +21,16 @@ function displayText(challengeText) {
     console.log(color);
     switch(color){
       case "1":
-        clr1 = "rgb(20, 184, 55)";
-        clr2 = "red";
+        clr1 = "rgb(25, 109, 17)";
+        clr2 = "rgb(228, 124, 6)";
         break;
       case "2":
-        clr1 = "rgb(24, 164, 199)";
-        clr2 = "orange";
+        clr1 = "rgb(192, 164, 161)";
+        clr2 = "rgb(206, 67, 52)";
         break;
       case "3":
-        clr1 = "rgb(164, 17, 201)";
-        clr2 = "rgb(20, 184, 55)";
+        clr1 = "rgb(29, 190, 14)";
+        clr2 = "rgb(102, 9, 110)";
         break;
     }  
     tempContainer = document.querySelectorAll("#challengeText span");

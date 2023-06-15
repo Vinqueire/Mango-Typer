@@ -18,7 +18,11 @@
     color: #000000;
 }
   
+
+.temp {
+  color: rgb(102, 9, 110);
+}
 body{
-    background-color: rgb(218, 219, 206);
+    background-color: #181a1b;
     font-family: 'Anonymous Pro', monospace;
 }

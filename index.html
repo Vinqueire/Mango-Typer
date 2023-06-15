@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/static/style.css">
     <title>Mango Typer</title>
 </head>
-  <body>
+  <body style="background-color: #181a1b;">
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark"">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://vinqueire.github.io/Wpm-website">
@@ -26,18 +26,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Options
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" onclick="setColour(1)">Green/Red</a></li>
+                  <li><a class="dropdown-item" onclick="setColour(1)">Mango 🥭</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#" onclick="setColour(2)">Blue/Orange</a></li>
+                  <li><a class="dropdown-item" onclick="setColour(2)">Shroom 🍄</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#" onclick="setColour(3)">Pink/Green</a></li>
+                  <li><a class="dropdown-item" onclick="setColour(3)">Grape 🍇</a></li>
                 </ul>
               </li>
-              <option value="1" id="color" hidden>XDDD<option>
+              <option value="1" id="color" hidden><option>
             </ul>
             <span class="navbar-text">
                 <a href="https://github.com/Vinqueire"><img src="github.png" alt="Logo" width="25" height="25" class="d-inline-block align-text"></a>
@@ -47,7 +47,7 @@
     </nav>
     <div style="text-align: center;">
         <form>
-            <select id="timeSelect" class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+            <select id="timeSelect" class="form-select form-select-sm mb-3 bg-dark" aria-label=".form-select-lg example" style="color: aliceblue;">
                 <option selected disabled value="0">Select time</option>
                 <option value="10">10 sec</option>
                 <option value="20">20 sec</option>
@@ -61,13 +61,13 @@
         </div>    
     </div>
     <div class="container" style="text-align: center;">
-        <div id="challengeText" onmousedown='return false;' onselectstart='return false;'></div>
-        <input type="text" hidden id="userInput" placeholder="Type your text here">
+        <div id="challengeText" onmousedown='return false;' style="color: aliceblue;" onselectstart='return false;'></div>
+        <input type="text" hidden id="userInput" style="position: relative; top: 0.5rem; border-radius: 0.2rem;" placeholder="Type your text here">
     </div>
-    <p id="countdown" hidden style="font-size: 2rem; text-align: center;">The test will begin in: <span id="countdownTime"></span></p>
+    <p id="countdown" hidden style="font-size: 2rem; text-align: center; color: aliceblue;">The test will begin in: <span id="countdownTime"></span></p>
     <div style="text-align: center;">
-        <p style="font-size: 2rem;" id="timeLeft" hidden>Time left: <span id="timer" style="font-size: 2rem;"></span></p>
-        <p style="font-size: 2rem;" id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
+        <p style="font-size: 2rem; position: relative; top: 0.5rem; color: aliceblue;" id="timeLeft" hidden>Time left: <span id="timer"></span></p>
+        <p style="font-size: 2rem; color: aliceblue;" id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
         <button id="restart" hidden class="btn btn-secondary btn-sm" type="button" onclick="countdown(3);resetInput();" style="position: relative; top: 0.1rem; width: 6rem;">Restart</button>   
     </div>
     <script src="wpmCalculation.js"></script>
