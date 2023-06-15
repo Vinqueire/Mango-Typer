@@ -44,19 +44,19 @@ function makeList() {
     console.log(timeToSwitch);
     switch(timeToSwitch){
       case "10":
-        length = 100;
+        length = 75;
         break;
       case "20":
-        length = 150;
+        length = 90;
         break;
       case "30": 
-        length = 200;
+        length = 100;
         break;
       case "60":
-        length = 250;
+        length = 200;
         break;
       case "300":
-        length = 1000;
+        length = 800;
         break;
     }
 

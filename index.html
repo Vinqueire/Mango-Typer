@@ -11,12 +11,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=EB+Garamond:wght@500&family=Kablammo&family=Lobster&family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=EB+Garamond:wght@500&family=Kablammo&family=Lobster&family=Playfair:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Mango Typer</title>
 </head>
-  <body style="background-color: #181a1b;">
+  <body>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark"">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://vinqueire.github.io/Wpm-website">
@@ -57,18 +57,18 @@
             </select>
         </form>
         <div>
-            <button id="begin" class="btn btn-secondary btn-sm" type="button" onclick="countdown(3);" style="position: relative; top: 0.1rem; width: 6rem;">Start</button>
+            <button id="begin" class="btn btn-secondary btn-sm" type="button" onclick="countdown(3);">Start</button>
         </div>    
     </div>
     <div class="container" style="text-align: center;">
-        <div id="challengeText" onmousedown='return false;' style="color: aliceblue;" onselectstart='return false;'></div>
-        <input type="text" hidden id="userInput" style="position: relative; top: 0.5rem; border-radius: 0.2rem;" placeholder="Type your text here">
+        <div id="challengeText" onmousedown='return false;' onselectstart='return false;'></div>
+        <input type="text" hidden id="userInput" autocomplete="off" placeholder="Type your text here">
     </div>
-    <p id="countdown" hidden style="font-size: 2rem; text-align: center; color: aliceblue;">The test will begin in: <span id="countdownTime"></span></p>
+    <p id="countdown" hidden>The test will begin in: <span id="countdownTime"></span></p>
     <div style="text-align: center;">
-        <p style="font-size: 2rem; position: relative; top: 0.5rem; color: aliceblue;" id="timeLeft" hidden>Time left: <span id="timer"></span></p>
-        <p style="font-size: 2rem; color: aliceblue;" id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
-        <button id="restart" hidden class="btn btn-secondary btn-sm" type="button" onclick="countdown(3);resetInput();" style="position: relative; top: 0.1rem; width: 6rem;">Restart</button>   
+        <p id="timeLeft" hidden>Time left: <span id="timer" style="font-size: 2rem;"></span></p>
+        <p id="answer" hidden>You've got: <span id="answerWpm" style="font-size: 2rem;"></span> WPM</p>
+        <button id="restart" hidden class="btn btn-secondary btn-sm" type="button" onclick="countdown(3);resetInput();">Restart</button>   
     </div>
     <script src="wpmCalculation.js"></script>
     <script src="setColour.js"></script>
