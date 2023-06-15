@@ -29,7 +29,7 @@ function displayText(challengeText) {
         clr2 = "rgb(206, 67, 52)";
         break;
       case "3":
-        clr1 = "rgb(29, 190, 14)";
+        clr1 = "rgb(24, 112, 24)";
         clr2 = "rgb(102, 9, 110)";
         break;
     }  
