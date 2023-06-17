@@ -4,7 +4,7 @@ function startTest() {
     if (timeSelect.value === "0") 
     {
     alert("No time has been selected");
-    window.location.href = "https://vinqueire.github.io/Wpm-website/";
+    window.location.href = "https://vinqueire.github.io/Mango-Typer/";
     } 
     else 
     {
